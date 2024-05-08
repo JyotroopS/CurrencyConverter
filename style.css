@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: cadetblue;
+}
+
+.converter-container{
+    padding: 24px 30px;
+
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+
+    text-align: center;
+}
+
+.converter-container h1{
+    margin-bottom: 35px;
+
+    font-size: 28px;
+    color:chocolate;
+}
+
+.converter-container .input-container{
+    margin-block: 20px;
+
+    border: 2px solid #bbbbbd;
+    border-radius: 4px;
+}
+
+.converter-container .input-container:focus-within{
+    border-color: rgb(7, 87, 216);
+
+}
+
+.converter-container .input-container input,
+.converter-container .input-container select{
+    padding: 8px;
+
+    font-size: 18px;
+
+    width: 150px;
+    outline: none;
+    border: none;
+
+    overflow: hidden;
+}
+
+.converter-container .arrow{
+    transform: rotate(90deg);
+    font-size: 44px;
+}
+
+.converter-container .result{
+    margin-top: 20px;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* RESPONSIVE CODE */
