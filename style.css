@@ -68,3 +68,24 @@ body{
 }
 
 /* RESPONSIVE CODE */
+@media screen and (max-width:440px){
+    .converter-container{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .converter-container h1{
+        font-size: 22px;
+    }
+
+    .converter-container .input-container{
+        border: none;
+    }
+    
+    .converter-container .input-container input,
+    .converter-container .input-container select{
+        border: 1px solid #ccc;
+        margin-block: 4px;
+        width: 100%;
+    }
+}
