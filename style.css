@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    font-family: "Poppins", sans-serif;
+    
 }
 
 body{
@@ -10,36 +14,53 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: cadetblue;
+
+    background-color: #0C0612;
+    /* background-color: white; */
 }
 
 .converter-container{
     padding: 24px 30px;
 
     background-color: white;
-    border-radius: 8px;
+
+    border-radius: 15px;
+    border: 8px solid #EE6418;
+
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
 
     text-align: center;
 }
 
-.converter-container h1{
+h1{
+    margin-bottom: 40px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    font-size: 38px;
+
+    color: #EE6418;
+}
+
+/* .converter-container h1{
     margin-bottom: 35px;
 
+    text-transform: uppercase;
     font-size: 28px;
-    color:chocolate;
-}
+    color:#EE6418;
+} */
 
 .converter-container .input-container{
     margin-block: 20px;
 
-    border: 2px solid #bbbbbd;
-    border-radius: 4px;
+    border: 2px solid #EE6418;
+    border-radius: 25px;
 }
 
 .converter-container .input-container:focus-within{
+    border: 3px solid;    
     border-color: rgb(7, 87, 216);
-
 }
 
 .converter-container .input-container input,
