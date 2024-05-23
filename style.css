@@ -6,36 +6,39 @@
     box-sizing: border-box;
 
     font-family: "Poppins", sans-serif;
-    
 }
 
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-
     background-color: #0C0612;
-    /* background-color: white; */
 }
 
 .converter-container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+    width: 450px;
     padding: 24px 30px;
 
     background-color: white;
 
-    border-radius: 15px;
-    border: 8px solid #EE6418;
+    border-radius: 20px;
+    border: 4px solid #EE6418;
 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 15px #EE6418;
 
     text-align: center;
 }
 
 h1{
+    margin-top: 40px;
     margin-bottom: 40px;
 
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     text-transform: uppercase;
 
     font-size: 38px;
@@ -43,29 +46,23 @@ h1{
     color: #EE6418;
 }
 
-/* .converter-container h1{
-    margin-bottom: 35px;
-
-    text-transform: uppercase;
-    font-size: 28px;
-    color:#EE6418;
-} */
-
 .converter-container .input-container{
     margin-block: 20px;
 
     border: 2px solid #EE6418;
-    border-radius: 25px;
+    border-radius: 8px;
 }
 
-.converter-container .input-container:focus-within{
-    border: 3px solid;    
-    border-color: rgb(7, 87, 216);
+.converter-container .input-container:focus{
+    border: 3px solid;   
+    border-color: rgb(6, 49, 119);
 }
 
 .converter-container .input-container input,
 .converter-container .input-container select{
-    padding: 8px;
+    background: none;
+    
+    padding: 10px 0px;
 
     font-size: 18px;
 
@@ -76,9 +73,10 @@ h1{
     overflow: hidden;
 }
 
-.converter-container .arrow{
-    transform: rotate(90deg);
-    font-size: 44px;
+lord-icon{
+    transform: translateY(5px);
+    width: 100px; 
+    height: 100px;
 }
 
 .converter-container .result{
@@ -88,14 +86,24 @@ h1{
     font-weight: 700;
 }
 
+hr{
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
 /* RESPONSIVE CODE */
-@media screen and (max-width:440px){
+@media screen and (max-width: 430px){
     .converter-container{
         width: 80%;
-        margin: 0 auto;
+        
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        border-radius: 10px;
     }
 
-    .converter-container h1{
+    h1{
         font-size: 22px;
     }
 
@@ -105,8 +113,21 @@ h1{
     
     .converter-container .input-container input,
     .converter-container .input-container select{
-        border: 1px solid #ccc;
         margin-block: 4px;
+        padding-inline: 15px;
+
         width: 100%;
+
+        border: 2px solid #EE6418;
+        border-radius: 8px;
+    }
+
+    .converter-container .input-container:focus{
+        outline: none;
+    }
+
+    lord-icon{
+        width: 70px; 
+        height: 50px;
     }
 }
